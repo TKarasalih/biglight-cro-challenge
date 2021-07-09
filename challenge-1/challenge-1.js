@@ -65,4 +65,14 @@ if (window.innerWidth < 720) {
 
   const observer = new MutationObserver(callback);
   observer.observe(targetNode, config);
+
+  // Intersection observer for watching where the original quantity field is
+  function e(entries) {
+    entries.forEach(function (entry) {
+      fixedBar.style.bottom = entry.isIntersecting ? "-100px" : "0";
+    });
+  }
+
+  var intObserver = new IntersectionObserver(e);
+  intObserver.observe(targetNode);
 }
