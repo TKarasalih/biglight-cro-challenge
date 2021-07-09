@@ -5,6 +5,7 @@ CRO - Senior Developer challenge
 ## Dependencies
 
 - NodeJS
+- ExpressJS
 
 ## Server setup
 
