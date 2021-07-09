@@ -1,0 +1,15 @@
+{
+  "name": "biglight-challenges",
+  "version": "1.0.0",
+  "description": "Tan's challenge submission for Biglight",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tan Karasalih",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sass": "^1.35.2"
+  }
+}

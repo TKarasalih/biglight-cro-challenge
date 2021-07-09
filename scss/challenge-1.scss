@@ -1,0 +1,42 @@
+// Amazon brand colours
+$amazon-blue: #232f3e;
+$amazon-yellow: #ffd814;
+$ml: 1.7rem;
+$br: 0.8rem;
+$mx-auto: 0 auto;
+$lh: 3.3rem;
+
+.fixed-bar__challenge-1 {
+  background-color: $amazon-blue;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 20px;
+  .container__challenge-1 {
+    display: flex;
+    margin: 0 auto;
+    .quant__challenge-1 {
+      border-color: #d5d9d9;
+      border-radius: $br;
+      margin: $mx-auto;
+      color: #0f1111;
+      background: #f0f2f2;
+      line-height: $lh;
+      padding: 10px;
+      .icon-pos__challenge-1 {
+        margin-left: $ml;
+        vertical-align: baseline;
+      }
+    }
+    .atb__challenge-1 {
+      margin: 0 auto;
+      width: 60%;
+      line-height: $lh;
+      .atb-btn__challenge-1 {
+        padding: 10px;
+        border-radius: $br;
+      }
+    }
+  }
+}
