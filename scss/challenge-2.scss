@@ -1,5 +1,26 @@
+$full: 100%;
+$amazon-orange: #fcbb6a;
+$my: 10px;
+
 .ad__challenge-2 {
   background: #000;
-  font-weight: bold;
-  color: #fff;
+  padding: 20px 0;
+  width: $full;
+  height: $full;
+  .text-white__challenge-2 {
+    color: #fff;
+    margin-bottom: 0;
+  }
+  .my__challenge-2 {
+    margin: $my 0;
+  }
+  .text-center__challenge-2 {
+    text-align: center;
+  }
+  .text-orange__challenge-2 {
+    color: $amazon-orange;
+  }
+  small {
+    font-size: 1rem;
+  }
 }
