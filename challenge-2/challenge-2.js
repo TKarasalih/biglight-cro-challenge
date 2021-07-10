@@ -2,10 +2,10 @@
 if (window.innerWidth < 720) {
   function challenge() {
     // Get first result element
-    var firstProduct = document.getElementsByClassName("s-result-item")[3];
+    let firstProduct = document.getElementsByClassName("s-result-item")[2];
 
     // Create element to put after firstProduct
-    var adElement = document.createElement("div");
+    let adElement = document.createElement("div");
     adElement.classList.add("ad__challenge-2");
     adElement.innerHTML = `
       <div class="container__challenge-2">
@@ -28,14 +28,20 @@ if (window.innerWidth < 720) {
     firstProduct.parentNode.insertBefore(adElement, firstProduct.nextSibling);
   }
 
+  // Fire initially
   challenge();
 
-  const targetNode = document.getElementById("search");
-  const config = { attributes: true };
+  // Mutation observer watching search ID for attribute change
+  const targetNode = document.body;
+  const config = {
+    attributes: true,
+    childList: true,
+    attributeFilter: [".s-spinner-parent"],
+  };
 
   const callback = function (mutationsList, observer) {
     for (const mutation of mutationsList) {
-      if (mutation.type === "attributes") {
+      if (mutation.type === "childList") {
         challenge();
       }
     }
