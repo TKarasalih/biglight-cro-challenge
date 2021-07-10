@@ -6,6 +6,7 @@ CRO - Senior Developer challenge
 
 - NodeJS
 - ExpressJS
+- SASS
 
 ## Server setup
 
