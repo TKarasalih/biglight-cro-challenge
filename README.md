@@ -27,6 +27,12 @@ Challenge 1:
 - File 1: https://localhost:7000/challenge-1/challenge-1.js
 - File 2: https://localhost:7000/challenge-1/challenge-1.css
 
+Challenge 2:
+- URL pattern: https://www.amazon.co.uk/s?k=Amazon
+- File 1: https://localhost:7000/challenge-2/challenge-2.js
+- File 2: https://localhost:7000/challenge-2/challenge-2.css
+
+
 You can now browse the Amazon site using the injector pointed towards the files.
 
 # Explanations
